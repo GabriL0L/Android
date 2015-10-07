@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">EJ004</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Las cuatro estaciones</string>
+    <string name="estaciones">Estaciones</string>
+    <string name="me_gusta">Me gusta</string>
+    <string name="primavera">Primavera</string>
+    <string name="verano">Verano</string>
+    <string name="otonho">Otoño</string>
+    <string name="invierno">Invierno</string>
+    <string name="me_gusta_">"Me gusta "</string>
+    <string name="la_primavera">la primavera.</string>
+    <string name="el_verano">el verano.</string>
+    <string name="el_otonho">el otoño.</string>
+    <string name="el_invierno">el invierno.</string>
+</resources>
