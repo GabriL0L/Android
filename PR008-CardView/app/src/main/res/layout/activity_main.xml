@@ -13,31 +13,256 @@
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="193dp"
             app:cardUseCompatPadding="true">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="+@id/lbl1">
+                >
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Cuenta">
+                    android:text="Cuenta"
+                    android:id="@+id/textView2"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/textView"
+                    android:layout_alignStart="@+id/textView">
 
                 </TextView>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cuenta"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignEnd="@+id/textView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Propina"
+                    android:id="@+id/textView"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginEnd="22dp"
+                    android:layout_below="@+id/cuenta"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/propina"
+                    android:layout_alignTop="@+id/porPropina"
+                    android:layout_alignBottom="@+id/porPropina"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:layout_alignRight="@+id/textView5"
+                    android:layout_alignEnd="@+id/textView5"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%Prop"
+                    android:id="@+id/textView3"
+                    android:layout_marginRight="144dp"
+                    android:layout_marginEnd="144dp"
+                    android:layout_alignBaseline="@+id/textView"
+                    android:layout_alignBottom="@+id/textView"
+                    android:layout_toLeftOf="@+id/textView"
+                    android:layout_toStartOf="@+id/textView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/porPropina"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/textView3"
+                    android:layout_alignEnd="@+id/textView3"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:id="@+id/textView4"
+                    android:layout_alignBaseline="@+id/porPropina"
+                    android:layout_alignBottom="@+id/porPropina"
+                    android:layout_toRightOf="@+id/porPropina" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:id="@+id/textView5"
+                    android:layout_gravity="right"
+                    android:layout_below="@+id/propina"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignEnd="@+id/textView"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/total"
+                    android:layout_below="@+id/propina"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/textView"
+                    android:layout_alignEnd="@+id/textView"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€"
+                    android:id="@+id/textView6"
+                    android:layout_below="@+id/textView2"
+                    android:layout_toRightOf="@+id/cuenta"
+                    android:layout_toEndOf="@+id/cuenta" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€"
+                    android:id="@+id/textView7"
+                    android:layout_alignTop="@+id/textView4"
+                    android:layout_toRightOf="@+id/propina"
+                    android:layout_toEndOf="@+id/propina" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€"
+                    android:id="@+id/textView8"
+                    android:layout_below="@+id/textView5"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:layout_toEndOf="@+id/textView5" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular"
+                    android:id="@+id/calcularCuenta"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/textView3"
+                    android:layout_toStartOf="@+id/textView3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Limpiar"
+                    android:id="@+id/limpiarCuenta"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Redondear"
+                    android:id="@+id/redondearCuenta"
+                    android:layout_alignBottom="@+id/limpiarCuenta"
+                    android:layout_alignRight="@+id/textView8"
+                    android:layout_alignEnd="@+id/textView8" />
+
             </RelativeLayout>
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="108dp"
             app:cardUseCompatPadding="true">
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="+@id/lbl2">
+                >
 
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Por comensal"
+                    android:id="@+id/textView9"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginEnd="22dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Comensales"
+                    android:id="@+id/textView10"
+                    android:layout_marginRight="84dp"
+                    android:layout_marginEnd="84dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/textView9"
+                    android:layout_toStartOf="@+id/textView9" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/porComensal"
+                    android:layout_below="@+id/textView9"
+                    android:layout_toRightOf="@+id/comensales"
+                    android:layout_alignRight="@+id/textView9"
+                    android:layout_alignEnd="@+id/textView9"
+                    android:inputType="number"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView10"
+                    android:layout_alignRight="@+id/textView10"
+                    android:layout_alignEnd="@+id/textView10"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/comensales"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="€"
+                    android:id="@+id/textView11"
+                    android:layout_alignBaseline="@+id/porComensal"
+                    android:layout_alignBottom="@+id/porComensal"
+                    android:layout_toRightOf="@+id/porComensal"
+                    android:layout_toEndOf="@+id/porComensal" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calcular"
+                    android:id="@+id/calcularComensal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/limpiarComensal"
+                    android:layout_toStartOf="@+id/limpiarComensal"
+                    android:layout_marginRight="18dp"
+                    android:layout_marginEnd="18dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Redondear"
+                    android:id="@+id/redondearComensal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/textView11"
+                    android:layout_alignEnd="@+id/textView11" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Limpiar"
+                    android:id="@+id/limpiarComensal"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
 
             </RelativeLayout>
         </android.support.v7.widget.CardView>
