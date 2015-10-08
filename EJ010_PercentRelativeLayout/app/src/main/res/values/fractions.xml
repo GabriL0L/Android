@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="ai_width">70%</fraction>
+    <fraction name="ad_width">24%</fraction>
+    <fraction name="m_width">47%</fraction>
+    <fraction name="abi_width">10%</fraction>
+    <fraction name="abd_width">84%</fraction>
+    <fraction name="views_height">30%</fraction>
+    <fraction name="views_margin">2%</fraction>
+</resources>
