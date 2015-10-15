@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EJ012-CicloVida</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="incrementar">Incrementar</string>
+</resources>
