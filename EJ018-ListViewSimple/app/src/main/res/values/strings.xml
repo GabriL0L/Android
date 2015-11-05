@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EJ018-ListViewSimple</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="listado_de_alumnos">Lista de Alumnos</string>
+    <string name="title_activity_otra">OtraActivity</string>
+</resources>

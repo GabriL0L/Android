@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EJ020-MenuSimple</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="frase_aprobado">Aprobar a %1$s</string>
+    <string name="frase_suspenso">Suspender a %1$s</string>
+</resources>
