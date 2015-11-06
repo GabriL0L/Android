@@ -66,6 +66,8 @@ public class MiAdaptador extends ArrayAdapter<Alumno> {
             holder.lblEdad.setText(datos.get(position).getEdad() + " años");
             holder.lblEdad.setTextColor(Color.BLACK);
         }
+
+
     }
 
 }

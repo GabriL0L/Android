@@ -4,8 +4,12 @@
     tools:context=".MainActivity">
     <item
         android:id="@+id/aprobar"
-        android:title="Aprobar" />
+        android:title="Aprobar"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_aprobar"/>
     <item
         android:id="@+id/suspender"
-        android:title="Suspender" />
+        android:title="Suspender"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/ic_suspender"/>
 </menu>
