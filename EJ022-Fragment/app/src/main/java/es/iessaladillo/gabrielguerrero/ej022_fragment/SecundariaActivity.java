@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 /**
@@ -19,10 +20,14 @@ public class SecundariaActivity extends AppCompatActivity implements UnoFragment
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_secundaria);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         gestor = getSupportFragmentManager();
         Intent intent = getIntent();
         String mensaje = intent.getStringExtra(MENSAJE);
         cargarFragmento(mensaje);
+
     }
 
     public static void start(Context context,String mensaje){

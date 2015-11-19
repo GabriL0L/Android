@@ -1,15 +1,20 @@
 package es.iessaladillo.gabrielguerrero.ej022_fragment;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Usuario on 12/11/2015.
@@ -19,6 +24,7 @@ public class UnoFragment extends Fragment{
     private static final String MENSAJE = "MENSAJE";
     private CallBack listener;
     private EditText txtFragmento;
+    private Menu menu;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -59,6 +65,7 @@ public class UnoFragment extends Fragment{
         TextView lblMensaje = (TextView) v.findViewById(R.id.lblMensaje);
         Button btnFragmento = (Button) v.findViewById(R.id.btnFragmento);
         txtFragmento = (EditText) v.findViewById(R.id.txtFragmento);
+        setHasOptionsMenu(true);
 
         lblMensaje.setText(mensaje);
 
@@ -75,4 +82,23 @@ public class UnoFragment extends Fragment{
     public interface CallBack{
        public void pulsado(String mensaje);
     }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        //menu.clear();
+        if(getActivity().getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT){
+            menu.removeItem(R.id.mnuLlamar);
+        }
+        inflater.inflate(R.menu.fragment_menu,menu);
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.mnuLlamar){
+            Toast.makeText(getActivity(),"Llamando...",Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
