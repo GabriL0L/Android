@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Púlsame"
+        android:id="@+id/btnPulsar"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Si/No"
+        android:id="@+id/btnSiNo"
+        android:layout_below="@+id/btnPulsar"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Equipo"
+        android:id="@+id/btnEquipo"
+        android:layout_below="@+id/btnSiNo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Equipo no directo"
+        android:id="@+id/btnEquipoND"
+        android:layout_below="@+id/btnEquipo"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Equipo multiple"
+        android:id="@+id/btnEquipoM"
+        android:layout_below="@+id/btnEquipoND"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento"
+        android:layout_below="@+id/btnEquipoM"
+        android:id="@+id/lblFecNac"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtFechaNac"
+        android:text=""
+        android:layout_below="@+id/lblFecNac" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hora del examen"
+        android:layout_below="@+id/txtFechaNac"
+        android:id="@+id/lblHoraExamen"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHoraExamen"
+        android:text=""
+        android:layout_below="@+id/lblHoraExamen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHoraExamen"
+        android:text="Cita"
+        android:id="@+id/lblCita"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtCita"
+        android:layout_below="@+id/lblCita" />
+
+</RelativeLayout>
